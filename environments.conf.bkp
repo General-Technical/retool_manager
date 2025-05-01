@@ -1,0 +1,33 @@
+# Retool Environments Configuration
+
+# Define which environments you want to use (true/false)
+USE_PROD_ENV=false
+USE_STAGING_ENV=false
+USE_DEV_ENV=true  # Keep only development enabled
+
+# Environment Directories
+PROD_DIR="/opt/retool-prod"
+STAGING_DIR="/opt/retool-staging"
+DEV_DIR="/opt/retool-dev"
+
+# Ports for each environment (API, HTTP, HTTPS)
+PROD_PORTS="3030 8030 8445"
+STAGING_PORTS="3020 8020 8444"
+DEV_PORTS="3010 8010 8443"
+
+# Version Policies
+PROD_VERSION_POLICY="stable"
+STAGING_VERSION_POLICY="latest"
+DEV_VERSION_POLICY="latest"
+
+# Specific Versions (only used if policy is "specific")
+PROD_SPECIFIC_VERSION=""
+STAGING_SPECIFIC_VERSION=""
+DEV_SPECIFIC_VERSION=""
+
+# Backup Configuration
+BACKUP_DIR="/opt/retool-backups"
+MAX_BACKUPS=10  # Number of backups to keep per environment
+
+# Logging Configuration
+LOG_DIR="/var/log/retool"
