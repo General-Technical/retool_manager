@@ -46,16 +46,12 @@ security-hardening.sh	System hardening for Docker/host security
 disaster-recovery.md	Full restore procedures
 deploy-dev.sh	Deploy dev containers easily
 manage_retool*.sh	General control scripts (start/stop/update)
-
+```
 💻 Usage Example
-bash
-Copy
-Edit
+```bash
 ./check_health.sh
 ./backup-all.sh
 ./rotate_backups.sh
+
 ⏱️ Cron Sample
-cron
-Copy
-Edit
-0 4 * * * /path/to/retool_manager/check_health.sh && /path/to/backup-all.sh
+cron 0 4 * * * /path/to/retool_manager/check_health.sh && /path/to/backup-all.sh
