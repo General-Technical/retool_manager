@@ -1,4 +1,4 @@
-# 🛠️ Project Suite: Retool Manager + Report Generator
+# 🛠️ Retool Manager
 
 This repository includes two independent toolsets:
 
